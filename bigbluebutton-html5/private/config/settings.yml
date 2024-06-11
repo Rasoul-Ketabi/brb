@@ -11,7 +11,7 @@ public:
     listenOnlyMode: true
     forceListenOnly: false
     # Skips the echo test when connecting with microphone.
-    skipCheck: false
+    skipCheck: true
     instanceId: ''
     # Skips the echo test when connecting with microphone right after user
     # joins the room the first time. Subsequent joins to microphone won't
@@ -27,16 +27,16 @@ public:
     # "media.setsinkid.enabled" to make it work properly
     enableDynamicAudioDeviceSelection: true
     #
-    clientTitle: BigBlueButton
-    appName: BigBlueButton HTML5 Client
+    clientTitle: Reddot by Persisca
+    appName: Reddot by Persisca
     bbbServerVersion: HTML5_FULL_BBB_VERSION
-    displayBbbServerVersion: true
-    copyright: '©2024 BigBlueButton Inc.'
+    displayBbbServerVersion: false
+    copyright: '©2024 Persisca Technologies.'
     html5ClientBuild: HTML5_CLIENT_VERSION
-    helpLink: https://bigbluebutton.org/html5/
+    helpLink: https://persisca.com/
     delayForUnmountOfSharedNote: 120000
     bbbTabletApp:
-      enabled: true
+      enabled: false
       iosAppStoreUrl: 'https://apps.apple.com/us/app/bigbluebutton-tablet/id1641156756'
       iosAppUrlScheme: 'bigbluebutton-tablet'
     lockOnJoin: true
@@ -76,7 +76,7 @@ public:
     enableWebcamSelectorButton: true
     enableTalkingIndicator: true
     enableCameraBrightness: true
-    mirrorOwnWebcam: false
+    mirrorOwnWebcam: true
     viewersInWebcam: 8
     ipv4FallbackDomain: ''
     allowLogout: true
@@ -97,12 +97,12 @@ public:
         available:
         # - de-DE
           - en-US
-          - es-ES
-          - fr-FR
+        #  - es-ES
+        #  - fr-FR
         # - hi-ID
         # - it-IT
         # - ja-JP
-          - pt-BR
+        #  - pt-BR
         # - ru-RU
         # - zh-CN
         # If true, automatically uses the below locale field content as transcription language
